@@ -13,7 +13,7 @@ services:
     buildCommand: './build.sh'
     startCommand: 'gunicorn react.wsgi:application'
     plan: free
-    branch: main
+    branch: t5
     healthCheckPath: /
     envVars:
       - key: DATABASE_URL
