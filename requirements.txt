@@ -9,4 +9,3 @@ whitenoise
 djangorestframework
 django-cors-headers
 qiskit
-mysite
