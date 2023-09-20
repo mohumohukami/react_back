@@ -74,7 +74,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'mysite.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    "*"  # 許可するオリジンを指定
+    "http://localhost:3000"  # 許可するオリジンを指定
     # 他の許可するオリジンを追加する場合はここに追加
 ]
 
