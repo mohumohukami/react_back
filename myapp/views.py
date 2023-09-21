@@ -83,7 +83,8 @@ def execute_python_code(request):
     if request.method == "POST":
         # POSTリクエストからデータを取得
         data = json.loads(request.body)
-        print("requested", data)
+        # print("requested", data)
+        print("POSTリクエストが送信されました")
         image_info_list = data["img_data"]
         dot_info_list = data["dot_data"]
         # print("img",image_info_list)
