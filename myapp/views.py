@@ -10,6 +10,7 @@ def calc(img_info_list,dot_info_list):
     gate(qc, img_info_list,dot_info_list)
     qc = transpile(qc, sim)
     qc.save_statevector()
+    print(qc)
     counts = sim.run(qc).result().get_counts()
     print(counts)
     result = counts
@@ -85,8 +86,8 @@ def execute_python_code(request):
         print("requested", data)
         image_info_list = data["img_data"]
         dot_info_list = data["dot_data"]
-        print("img",image_info_list)
-        print("dot",dot_info_list)
+        # print("img",image_info_list)
+        # print("dot",dot_info_list)
         # データを計算する
         result = calc(image_info_list,dot_info_list)
         #result = [image_info_list,dot_info_list]
