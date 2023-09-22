@@ -16,9 +16,9 @@ def calc(img_info_list,dot_info_list):
     labels = [format(i,'04b') for i in range(16)]
     result = {}
     for label in labels:
-        result[label] = 0.0
-    for label in labels:
-        result[label] = counts[label]
+        for key,value in counts.items():
+            if label == key:
+                result[key] = value
     return result
 
 
