@@ -74,7 +74,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'mysite.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000"  # 許可するオリジンを指定
+    "http://localhost:3000",  # 許可するオリジンを指定
+    "https://mohumohukami.github.io/quantumcircuit_web/"
     # 他の許可するオリジンを追加する場合はここに追加
 ]
 
