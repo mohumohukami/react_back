@@ -12,8 +12,10 @@ def calc(img_info_list,dot_info_list):
     qc.save_statevector()
     print(qc)
     counts = sim.run(qc).result().get_counts()
-    result = {}
     labels = [format(i,'04b') for i in range(16)]
+    result = {}
+    for label in labels:
+        result[label] = 0.0
     for label in labels:
         result[label] = counts[label]
     return result
