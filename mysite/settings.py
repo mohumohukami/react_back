@@ -75,7 +75,7 @@ ROOT_URLCONF = 'mysite.urls'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # 許可するオリジンを指定
-    "https://mohumohukami.github.io/quantumcircuit_web/"
+    "https://mohumohukami.github.io"
     # 他の許可するオリジンを追加する場合はここに追加
 ]
 
